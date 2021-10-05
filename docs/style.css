@@ -27,7 +27,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 100vh;
+    /* min-width: 100vh; */
 }
 
 .container {
@@ -41,9 +41,7 @@ body {
     grid-template-columns: 1.2fr 2fr;
     box-shadow: 0 35px 55px rgba(0, 0, 0, .1)
 }
-a{
-    text-decoration: none;
-}
+
 
 /* Lado izquierdo */
 
@@ -121,6 +119,9 @@ a{
     color: var(--text-color-primary);
     margin: 10px 0;
     cursor: pointer;
+}
+.contactInfo ul li a{
+ text-decoration: none;
 }
 
 .contactInfo ul li .icon {
@@ -259,7 +260,7 @@ a{
 /* Intereses */
 .interest ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .interest ul li {
@@ -295,10 +296,11 @@ a{
         max-width: 300px;
         margin-bottom: 5px;
     }
-    .interest ul {
-        grid-template-columns: repeat(4, 1fr);
-    }
     .skills .box {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .interest ul {
+        grid-template-columns: repeat(1, 1fr);
+       
     }
 }
